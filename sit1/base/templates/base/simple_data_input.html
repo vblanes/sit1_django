@@ -1,0 +1,26 @@
+{% extends 'base/base.html' %}
+{% load static %}
+
+{% block content %}
+
+<main role="main" class="container palliative-background wider-container">
+    {% include 'base/pc_banner.html' %}
+
+    <div class="pt-4">
+        <fieldset class="noBulletPoint">
+            <legend>
+                    <span class="ellipsis center" data-toggle="tooltip">
+                        <span>Data Input</span>
+                    </span>
+            </legend>
+            <div class="row">
+                <div class="col-md-4 offset-md-4  work-item mt-2">
+                    <a href="{% url 'send_test_job' %}" class="btn btn-outline-dark btn-block">Send job!</a>
+                </div>
+            </div>
+        </fieldset>
+    </div>
+
+</main>
+
+{% endblock %}

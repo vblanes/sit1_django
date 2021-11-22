@@ -1,0 +1,271 @@
+@font-face {
+  font-family: Maven;
+  src: url('/static/basic/assets/fonts/MavenPro-VariableFont_wght.ttf');
+}
+
+@font-face {
+  font-family: Maven;
+  font-weight: bold;
+  src: url('/static/basic/assets/fonts/MavenPro-Bold.ttf');
+}
+
+@font-face {
+  font-family: Maven;
+  font-weight: 600;
+  src: url('/static/basic/assets/fonts/MavenPro-SemiBold.ttf');
+
+}
+
+.django_input_field{
+    width: 100%;
+}
+
+.about-text{
+    font-size: calc(70% + 0.5vw);
+}
+
+.label-block {
+    font-weight: normal;
+    display: block;
+    padding: 6px 12px;
+    margin: 0;
+    border: 1px solid transparent;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: .25em;
+    width: 100%;
+}
+
+.load-btn{
+    width: parent;
+    }
+
+.btn-arrow{
+	background-color: #fedaa9;
+	border-color: #fedaa9;
+}
+
+/*Esta clase es para los iconos de la flecha*/
+.arrow{
+    color: #5a6268;
+    vertical-align: middle;
+    text-align: center;
+}
+
+[hidden] {
+  display: none !important;
+}
+
+td, th {
+    text-align: center;
+}
+
+
+body{
+    font-family: Maven;
+}
+
+/* i son las bolitas en la pagina de resultados*/
+/* Incluir varios tamanyos dependiendo de la pantalla*/
+
+@media screen and (max-width: 700px) {
+  p, span, input, select, label, i{
+     color: #6c7280;
+     font-size: 3vw;
+  }
+}
+
+@media screen and (min-width: 701px) and (max-width: 1500px) {
+  p, span, input, select, label, i{
+     color: #6c7280;
+     font-size: 1.5vw;
+  }
+}
+
+@media screen and (min-width: 1501px) {
+  p, span, input, select, label, i{
+     color: #6c7280;
+     font-size: 1vw;
+  }
+}
+
+
+
+/*
+p, span, input, select, label, i{
+    color: #6c7280;
+    font-size: calc(70% + 0.5vw);
+}
+*/
+
+b {
+    color: #000000;
+    font-size: calc(70% + 0.5vw);
+}
+
+
+.font-1vw{
+    font-size: calc(70% + 0.5vw);
+}
+
+.fifty {
+    width: 50%!important;
+}
+
+.twenty-five {
+    width: 25%!important;
+}
+
+.padd15{
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.wider-container{
+    /*
+    Original value
+    max-width: 1140px;
+    */
+    max-width: 1500px;
+}
+
+.gray{
+    color: #6c7280;
+}
+
+.black{
+    text-color: #000000;
+}
+
+.pc-orange{
+    background-color: #fedaa9;
+}
+
+.aqua-marina-bg{
+    background-color: #e4f8fc;
+}
+
+/*For the links in the circles*/
+.non-selected{
+    color: #6c7280;
+    text-decoration: none;
+    font-weight: normal;
+}
+
+.selected{
+    color: #525660;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer {
+  /*position: fixed;*/
+  /*height: 150px;*/
+  padding-bottom: 1%;
+  width: 100%;
+  color: gray;
+}
+
+.landing-background{
+  background-image: url('/static/basic/images/landing_logo.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  padding-top: 18%;
+  padding-bottom: 23%;
+}
+
+.palliative-background{
+  background-image: url('/static/basic/images/background_landing.jpg');
+  padding-bottom: 6%;
+}
+
+.disabledCircle {
+  width: 150px;
+  height: 150px;
+  line-height: 150px;
+  border-radius: 50%;
+  color: rgb(255, 102, 102);
+  text-align: center;
+  background: #808080;
+}
+
+.circle {
+  width: 150px;
+  height: 150px;
+  line-height: 150px;
+  border-radius: 50%;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  background: #fedaa9;
+}
+
+.circleBlue {
+  width: 150px;
+  height: 150px;
+  line-height: 150px;
+  border-radius: 50%;
+  color: rgb(105, 102, 102);
+  text-align: center;
+  background: #a0dffd;
+}
+
+.circlePurple {
+  width: 150px;
+  height: 150px;
+  line-height: 150px;
+  border-radius: 50%;
+  color: rgb(105, 102, 102);
+  text-align: center;
+  background: #e6daf2;
+}
+
+.circleSelected {
+  width: 150px;
+  height: 150px;
+  line-height: 150px;
+  border-radius: 50%;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  background:#fedaa9;
+}
+
+nav{
+    border-bottom: 1px solid gray;
+}
+
+.scrollContainer { border:2px solid #ccc; width:300px; height: 100px; overflow-y: scroll;}
+
+/*ChoiceField*/
+.narrow-select {
+  width: 80%;
+}
+
+/*Mejorar presentacion??*/
+fieldset.noBulletPoint ul {list-style:none}
+
+fieldset{
+    border: 1px solid #ddd !important;
+    margin: 0;
+    xmin-width: 0;
+    /*padding: 10px;*/
+    padding: 2%;
+    position: relative;
+    border-radius:4px;
+    background-color:#fdf2e4;
+    /*padding-left:10px!important;*/
+    padding-left:0%!important;
+}
+
+legend{
+    font-size:14px;
+    font-weight:bold;
+    margin-bottom: 0px;
+    width: 35%;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px 5px 5px 10px;
+    background-color: #ffffff;
+}
